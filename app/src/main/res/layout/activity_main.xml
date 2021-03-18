@@ -7,12 +7,39 @@
     tools:context=".MainActivity">
 
 
-    <SurfaceView
-        android:id="@+id/surfaceView"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txtMyRtsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/strRtsp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
+
+    <EditText
+        android:id="@+id/etRtsp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/txtMyRtsp"
+        app:layout_constraintStart_toStartOf="@+id/txtMyRtsp"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyRtsp"
+        android:autofillHints=""/>
+
+    <Button
+        android:id="@+id/btnOkay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/strButton"
+        app:layout_constraintEnd_toEndOf="@+id/etRtsp"
+        app:layout_constraintStart_toStartOf="@+id/etRtsp"
+        app:layout_constraintTop_toBottomOf="@+id/etRtsp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
